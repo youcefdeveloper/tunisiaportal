@@ -45,6 +45,7 @@
         align-items: center;
         position: relative;
         overflow: hidden;
+        background-color: #E7001310;
     }
 
     /* Background with gap top & bottom */
@@ -57,12 +58,13 @@
         right: 0;
 
         background-image: url('/assets/images/Flag_map_of_Tunisia.svg');
+        
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
 
         z-index: -1;
-        opacity: 1;
+        opacity: 0.04;
     }
 
     /* Top-right logo and toggle container */
@@ -116,11 +118,11 @@
 
     /* Coming Soon card */
     .coming-soon-card {
-        /* background: 
-            linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
-            url('/assets/images/flag-wave-500.png') no-repeat center center; */
+        background: 
+            linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+            url('/assets/images/flag-wave-500.png') no-repeat center center;
         background-size: cover;
-        padding: 35px 30px;
+        padding: 45px 30px;
         border-radius: 12px;
         text-align: center;
         box-shadow: 0 6px 20px rgba(0,0,0,0.2);
@@ -137,6 +139,10 @@
             width: 100%;
             box-shadow: none;
             border-radius: 0;
+            padding: 45px 20px;
+        }
+        body::before {
+            background-size: cover;
         }
     }
 
@@ -175,6 +181,13 @@
         height: 60px;
         opacity: .7;
     }
+    
+    .disclaimer {
+       text-align: 
+       center; color: #000000; 
+       font-size: 14px;
+       font-weight: 300;
+    }
 </style>
 </head>
 
@@ -184,7 +197,7 @@
 <div class="top-right">
     <div class="logo-container">
         <img src="/assets/images/flag-heart-3d-500.png" alt="Algeria Flag" class="logo-flag" />
-        <div class="logo" id="logoText">بوابة الجزائر</div>
+        <div class="logo" id="logoText">بوابة تونس</div>
     </div>
     <button class="lang-toggle" id="langToggle">English</button>
 </div>
@@ -192,7 +205,7 @@
 <!-- Centered Coming Soon Card -->
 <div class="coming-soon-card">
     <h1 id="cardTitle"  style="margin: 0 0 10px 0;">الموقع قيد الإنشاء</h1>
-    <p id="cardText1" style="margin: 0 0  0 0; font-weight: 300;">نحن نعمل على إطلاق بوابة الجزائر قريباً.</p>
+    <p id="cardText1" style="margin: 0 0  0 0; font-weight: 300;">نحن نعمل على إطلاق بوابة تونس قريباً.</p>
     <p id="cardText2" style="margin: 0 0  0 0; font-weight: 300;"><span>ابقَ على اطلاع!</span> سيتم تحديث هذا الموقع بأحدث الأخبار والمعلومات.</p>
 </div>
 
@@ -201,7 +214,7 @@
     <!-- <audio controls autoplay>
         <source src="assets/audio/driassa_01.webm" type="audio/mpeg">
     </audio> -->
-    <p style="text-align: center; color: #000000; font-size: 14px; font-weight: 300;" id="disclaimer">Tunisia Portal &copy; 2025</p>
+    <p class="disclaimer" id="disclaimer">Tunisia Portal &copy; 2025</p>
 </div>
 
 <script>
