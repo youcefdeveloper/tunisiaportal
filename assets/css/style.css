@@ -48,6 +48,7 @@ html, body {
 }
 * {
     font-family: 'Cairo', 'Montserrat', 'Hind Madurai', sans-serif;
+    color: #E70013;
 }
 body {
     display: flex;
@@ -57,6 +58,14 @@ body {
     overflow: hidden;
     background-color: #E7001310;
 }
+a {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 1px;
+  text-decoration-color: currentColor;
+  text-underline-offset: 3px; /* increase space */
+}
+
 /* Background with gap top & bottom */
 body::before {
     content: "";
@@ -152,10 +161,6 @@ body::before {
 .coming-soon-card p {
     font-size: 18px;
     line-height: 1.5;
-    color: #E70013;
-}
-.coming-soon-card span {
-    font-weight: 600;
     color: #E70013;
 }
 /* Bottom audio player */
