@@ -111,6 +111,10 @@ body::before {
     cursor: pointer;
     font-weight: bold;
     color: #E70013;
+    min-width: 70px;
+}
+[lang="en"] .lang-toggle {
+    padding: 4px 12px 8px 12px !important
 }
 .lang-toggle:hover {
     background: #E70013;
