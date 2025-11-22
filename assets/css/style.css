@@ -101,19 +101,6 @@ body::before {
     gap: 20px;
     background-color: rgba(255,255,255,0.9);
 }
-@media (max-width: 500px) {
-    .coming-soon-card {
-        width: 100%;
-        box-shadow: none;
-        border-radius: 0;
-        padding: 45px 20px;
-    }
-    body::before {
-        background-size: cover;
-        top: 0; 
-        bottom: 0; 
-    }
-}
 .coming-soon-card h1 {
     margin: 0;
     font-size: 32px;
@@ -145,10 +132,24 @@ body::before {
     height: 60px;
     opacity: .7;
 }
-
 .disclaimer {
    text-align: 
    center; color: #E70013; 
    font-size: 14px;
    font-weight: 300;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+    .coming-soon-card {
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 45px 20px;
+    }
+    body::before {
+        background-size: cover;
+        top: 0; 
+        bottom: 0; 
+    }
 }
