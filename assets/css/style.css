@@ -152,4 +152,8 @@ body::before {
         top: 0; 
         bottom: 0; 
     }
+    .coming-soon-card h1 {
+        font-size: 28px;
+        line-height: 33px;
+    }
 }
