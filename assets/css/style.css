@@ -1,3 +1,40 @@
+@font-face {
+    font-family: "kermes-Light";
+    src: url(/assets/fonts/kermes/Kermes-Light.woff);
+}
+
+@font-face {
+    font-family: "kermes-Regular";
+    src: url(/assets/fonts/kermes/Kermes-Regular.woff);
+}
+
+@font-face {
+    font-family: "kermes-SemiBold";
+    src: url(/assets/fonts/kermes/Kermes-SemiBold.woff);
+}
+
+@font-face {
+    font-family: "kermes-Bold";
+    src: url(/assets/fonts/kermes/Kermes-Bold.woff);
+}
+
+.fw-light {
+    font-family: 'kermes-Light', 'Cairo', 'Montserrat', 'Hind Madurai', sans-serif !important;
+    font-weight: 300;
+}
+.fw-regular {
+    font-family: 'kermes-Regular', 'Cairo', 'Montserrat', 'Hind Madurai', sans-serif !important;
+    font-weight: 400;
+}
+.fw-semiBold {
+    font-family: 'kermes-SemiBold', 'Cairo', 'Montserrat', 'Hind Madurai', sans-serif !important;
+    font-weight: 600;
+}
+.fw-bold {
+    font-family: 'kermes-Bold', 'Cairo', 'Montserrat', 'Hind Madurai', sans-serif !important;
+    font-weight: 700;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -74,6 +111,10 @@ body::before {
     cursor: pointer;
     font-weight: bold;
     color: #E70013;
+    min-width: 70px;
+}
+[lang="en"] .lang-toggle {
+    padding: 4px 12px 8px 12px !important
 }
 .lang-toggle:hover {
     background: #E70013;
