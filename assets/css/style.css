@@ -1,0 +1,154 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Cairo', 'Montserrat', 'Hind Madurai', sans-serif;
+    box-sizing: border-box;
+    /* filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); */
+    color: #ffffff;
+}
+* {
+    font-family: 'Cairo', 'Montserrat', 'Hind Madurai', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #E7001310;
+}
+/* Background with gap top & bottom */
+body::before {
+    content: "";
+    position: absolute;
+    top: 60px;        /* GAP TOP */
+    bottom: 60px;     /* GAP BOTTOM */
+    left: 0;
+    right: 0;
+    background-image: url('/assets/images/Flag_map_of_Tunisia.svg');
+    
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.04;
+}
+/* Top-right logo and toggle container */
+.top-right {
+    position: fixed;
+    top: 16px;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 32px);
+    align-items: center;
+    gap: 15px;
+    z-index: 1000;
+}
+.logo-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+.logo-flag {
+    width: 40px;
+    height: 40px;
+    /* border-radius: 50%;
+    border:#E7001310 1px solid; */
+}
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #E70013;
+    position: relative;
+    margin-top: -6px;
+}
+.lang-toggle {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid #E7001320;
+    background: white;
+    cursor: pointer;
+    font-weight: bold;
+    color: #E70013;
+}
+.lang-toggle:hover {
+    background: #E70013;
+    color: white;
+    border: 1px solid #E70013;
+}
+.lang-toggle:active {
+    background: white;
+    color: #E70013;
+}
+/* Coming Soon card */
+.coming-soon-card {
+    background: 
+        linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+        url('/assets/images/flag-wave-500.png') no-repeat center center;
+    background-size: cover;
+    padding: 45px 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    width: 400px;
+    color: #E70013;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(255,255,255,0.9);
+}
+@media (max-width: 500px) {
+    .coming-soon-card {
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 45px 20px;
+    }
+    body::before {
+        background-size: cover;
+        top: 0; 
+        bottom: 0; 
+    }
+}
+.coming-soon-card h1 {
+    margin: 0;
+    font-size: 32px;
+    line-height: 37px;
+    font-weight: 700;
+    color: #E70013;
+}
+.coming-soon-card p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #E70013;
+}
+.coming-soon-card span {
+    font-weight: 600;
+    color: #E70013;
+}
+/* Bottom audio player */
+.bottom-player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 32px);
+    padding: 0 16px 10px 16px;
+    background: transparent;
+    z-index: 999;
+}
+.bottom-player audio {
+    width: 100%;
+    height: 60px;
+    opacity: .7;
+}
+
+.disclaimer {
+   text-align: 
+   center; color: #E70013; 
+   font-size: 14px;
+   font-weight: 300;
+}
