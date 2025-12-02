@@ -121,6 +121,7 @@ body::before {
     font-weight: 400;
     color: #E70013;
     min-width: 70px;
+    height: 39px;
 }
 [lang="en"] .lang-toggle {
     padding: 4px 12px 8px 12px !important
@@ -211,7 +212,6 @@ body::before {
 [lang="en"] .lang-toggle {
     font-family: 'kermes-regular', 'Hind Madurai', sans-serif !important;
     padding: 4px 12px 8px 12px !important;
-    height: 39px !important;
 }
 
 [lang="en"] .logo {
