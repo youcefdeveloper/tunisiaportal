@@ -203,3 +203,15 @@ body::before {
         line-height: 33px;
     }
 }
+
+[lang="en"] * {
+    font-family: 'Hind Madurai', sans-serif !important;
+}
+
+[lang="en"] .lang-toggle {
+    font-family: 'kermes-light', 'Hind Madurai', sans-serif !important;
+}
+
+[lang="ar"] .contact-us {
+    font-family: 'Hind Madurai', sans-serif !important;
+}
